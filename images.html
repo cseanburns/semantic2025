@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+<style>
+h1 {
+    /* background: linear-gradient(white, gray); */
+    /* background: radial-gradient(yellow, green); */
+    /* background: radial-gradient(farthest-side at left bottom, yellow 50px, green); */
+    /* background: url('media/small_grid.gif');
+    border: 1px solid black; */
+}
+
+img {
+    border: 1px solid black;
+    background-color: silver;
+    width: 300px;
+    height: 400px;
+}
+
+.fill {
+    object-fit: fill;
+}
+.contain {
+    object-fit: contain;
+}
+.cover {
+    object-fit: cover;
+}
+.none {
+    object-fit: none;
+}
+.scale-down {
+    object-fit: scale-down;
+}
+
+
+.position {
+    object-position: 50% 50%;
+}
+.position_top {
+    object-position: 50% -50px;
+}
+.position_right {
+    object-position: 50px 50%;
+}
+.position_bottom {
+    object-position: 50% 50px;
+}
+.position_left {
+    object-position: -50px 50%;
+}
+
+.linear {
+    padding: 50px;
+    background: linear-gradient(white, black);
+}
+
+.angle {
+    padding: 50px;
+    background: linear-gradient(45deg, white, black);
+}
+
+.top {
+    padding: 50px;
+    background: linear-gradient(to top, silver, green);
+}
+</style>
+    </head>
+    <body>
+
+        <section>
+            <h1>Images</h1>
+
+            <h2>Image Sizing</h2>
+
+            <h3>Basic</h3>
+            <img src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+            <h3>Fill</h3>
+            <img class="fill" src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+            <h3>Contain</h3>
+            <img class="contain" src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+            <h3>Cover</h3>
+            <img class="cover" src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+            <h3>None</h3>
+            <img class="none" src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+            <h3>Scale Down</h3>
+            <img class="scale-down" src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+
+            <h2>Position</h2>
+            <h3>Image</h3>
+            <img class="position" src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+            <h3>Image Top</h3>
+            <img class="position_top" src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+            <h3>Image Right</h3>
+            <img class="position_right" src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+            <h3>Image Bottom</h3>
+            <img class="position_bottom" src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+            <h3>Image Left</h3>
+            <img class="position_left" src='media/box_circle.png' alt='A drawing of a box in a circle' width="503" height="515">
+
+            <h2>Gradients</h2>
+            <h3>Linear Gradient</h3>
+            <img class="linear" src='media/box_circle.png' alt='A drawing of a box in a circle'>
+            <h3>Linear Gradient Using Angle</h3>
+            <img class="angle" src='media/box_circle.png' alt='A drawing of a box in a circle'>
+            <h3>Linear Gradient Using Keywords</h3>
+            <img class="top" src='media/box_circle.png' alt='A drawing of a box in a circle'>
+
+
+
+        </section>
+
+    </body>
+</html>
